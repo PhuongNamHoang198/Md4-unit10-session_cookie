@@ -1,0 +1,8 @@
+Session là gì
+Một session hay còn gọi là một phiên làm việc.
+Nó là cách giao tiếp giữa client (trình duyệt web) với server.
+Một session bắt đầu khi client gửi request đến server,
+nó tồn tại xuyên suốt từ trang này đến trang khác trong ứng dụng và chỉ kết thúc khi hết thời gian timeout hoặc khi bạn đóng ứng dụng tắt trình duyệt . Giá trị của session sẽ được lưu trong một tệp tin trên máy chủ.
+Chúng chỉ nên lưu trữ những thông tin tạm thời trong session Với mỗi session sẽ được cấp phát một định danh duy nhất SessionID. Khi kết thúc một phiên làm việc và bắt đầu một phiên mới, chúng ta sẽ nhận được một session ID khác.
+
+Sau khi server tạo các giá trị session, server sẽ tạo ra một tệp tin cookie lưu trên trình duyệt của người dùng ứng với session đó. Như vậy chỉ cần so sánh tệp tin cookie bên phía client được gửi lên server và tệp session được lưu trên server để xem làm trình duyệt đó là mới hay cũ.
